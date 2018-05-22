@@ -1,0 +1,30 @@
+{
+  "name": "angular-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0",
+    "uglify-js": "^3.3.26"
+  },
+  "scripts": {
+    "postinstall": "bower install && npm install uglify-js -g",
+    "update-deps": "npm update",
+    "uglify:dist": "npm run mkdir:dist && uglifyjs lib/conduit/*.js > dist/conduit.min.js",
+    "uglify": "npm run uglify:dist",
+    "clean:dist": "if exist dist (rd /s /q dist)",
+    "clean": "npm run clean:dist",
+    "mkdir:dist": "if not exist dist (mkdir dist )",
+    "postupdate-deps": "bower update",
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1 ./lib",
+    "pretest": "npm install",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "build:js": "npm run uglify",
+    "build": "npm run clean && npm run build:js"
+  }
+}
