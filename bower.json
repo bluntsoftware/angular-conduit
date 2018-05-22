@@ -1,12 +1,13 @@
 {
   "name": "angular-conduit",
-  "description": "A starter project for AngularJS",
+  "description": "Api for IGlue Conduit",
   "version": "1.5.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://github.com/bluntsoftware/angular-conduit",
   "license": "MIT",
   "private": false,
   "dependencies": {
     "angular": "~1.5.0",
-    "angular-resource": "~1.5.0"
+    "angular-resource": "~1.5.0",
+    "angular-conduit":"https://github.com/bluntsoftware/angular-conduit.git#~1.5.0"
   }
 }
