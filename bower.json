@@ -8,8 +8,8 @@
   "_release": "1.5.1",
 
   "dependencies": {
-    "angular": "~1.5.0",
-    "angular-resource": "~1.5.0",
+    "angular": "~1.4.8",
+    "angular-resource": "~1.4.8",
     "angular-conduit":"https://github.com/bluntsoftware/angular-conduit.git#~1.5.0"
   }
 }
